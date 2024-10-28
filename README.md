@@ -202,4 +202,177 @@ Menggunakan print() untuk menampilkan hasil kepada pengguna, termasuk nama, gaji
 ## BERIKUT HASIL SCREENSHOOT VISUALCODE
 
 ![Cuplikan layar 2024-10-28 122440](https://github.com/user-attachments/assets/7a7b50c0-3278-4bf3-b8d9-82c089900dd8)
+# Latihan3
+# Program tiket bioskop
 
+![Screenshot From 2024-10-25 07-25-48](https://github.com/user-attachments/assets/2f9fa784-6b7c-46d1-a3ee-e785b82e5485)
+
+python
+# Fungsi untuk menghitung harga tiket
+def hitung_harga_tiket():
+    # Harga tiket
+    harga_reguler = 50000
+    harga_vip = 100000
+    diskon_member = 0.20  # Diskon 20%
+
+    # Meminta input dari pengguna
+    tipe_tiket = input("Masukkan tipe tiket (reguler/VIP): ").strip().lower()
+    status_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").strip().lower()
+
+    # Menentukan harga berdasarkan tipe tiket
+    if tipe_tiket == "reguler":
+        harga_tiket = harga_reguler
+    elif tipe_tiket == "vip":
+        harga_tiket = harga_vip
+    else:
+        print("Tipe tiket tidak valid!")
+        return
+
+    # Menghitung total harga dengan diskon jika berlaku
+    if status_member == "ya":
+        total_harga = harga_tiket * (1 - diskon_member)
+    elif status_member == "tidak":
+        total_harga = harga_tiket
+    else:
+        print("Status member tidak valid!")
+        return
+
+    # Menampilkan total harga
+    print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
+
+# Memanggil fungsi
+hitung_harga_tiket()
+`
+Program ini akan menentukan harga pesanan tiket bioskop, Yang reguler/Vip, dan jika Vip harga 100.000, dan jika reguler 80.0000, dan jika memiliki kartu member pelanggan tersebut akan mendapatkan diskon 20%
+
+python
+harga_reguler = 50000
+harga_vip = 100000
+`
+Untuk menentukan harga tiket tersebut
+
+python
+tipe_tiket = input("Masukkan tipe tiket (reguler/VIP): ").strip().lower()
+status_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").strip().lower()
+`
+Pengguna diminta untuk memasukkan tipe tiket yang mereka inginkan, bisa "reguler" atau "VIP", Pengguna juga diminta untuk menjawab apakah mereka memiliki kartu member, dengan pilihan "ya" atau "tidak"
+
+python
+if tipe_tiket == "reguler":
+    harga_tiket = harga_reguler
+elif tipe_tiket == "vip":
+    harga_tiket = harga_vip
+else:
+    print("Tipe tiket tidak valid!")
+    return
+`
+Jika tipe tiket adalah "reguler", harga tiket akan diatur menjadi harga_reguler (Rp50.000), Jika tipe tiket adalah "VIP", harga tiket akan diatur menjadi harga_vip (Rp100.000), Jika tipe tiket yang dimasukkan tidak valid, fungsi akan menampilkan pesan error dan menghentikan proses
+
+python
+if status_member == "ya":
+    total_harga = harga_tiket * (1 - diskon_member)
+elif status_member == "tidak":
+    total_harga = harga_tiket
+else:
+    print("Status member tidak valid!")
+    return
+`
+Jika pengguna adalah member (status_member == "ya"), harga tiket akan dikurangi diskon 20%, Jika pengguna bukan member (status_member == "tidak"), harga tiket tetap sama tanpa pengurangan, Jika input untuk status member tidak valid, misalnya selain "ya" atau "tidak", fungsi akan menampilkan pesan error dan menghentikan eksekusi
+
+python
+print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
+hitung_harga_tiket()
+`
+Setelah menghitung total harga, anda dapat langsung menjalankan fungsinya
+
+Hasil program tersebut:
+
+![Screenshot (47)](https://github.com/user-attachments/assets/1ff29a57-b4ea-4b6b-9d47-2ca1beb169d4)
+
+Code program tersebut:
+
+![Screenshot (48)](https://github.com/user-attachments/assets/ba884b84-ccaf-4cd2-8324-79b8439ca699)
+
+Dan ini flowchart nya
+
+![tiket biskop](https://github.com/user-attachments/assets/e4954a9c-ed41-4b0a-9371-eff8caf81703)
+
+# Program kalkulator sederhana
+![gambar](https://github.com/andreanbadeh/Labpy02/blob/e5c4003cbb820d9875a5e7ae0053af58ef5d122c/Image/Screenshot%20From%202024-10-25%2007-25-56.png)
+pyhton
+# Fungsi untuk kalkulator sederhana
+def kalkulator():
+    # Meminta input dari pengguna
+    angka1 = float(input("Masukkan angka pertama: "))
+    angka2 = float(input("Masukkan angka kedua: "))
+    operator = input("Masukkan operator (+, -, *, /): ").strip()
+
+    # Menghitung hasil berdasarkan operator yang dipilih
+    if operator == "+":
+        hasil = angka1 + angka2
+    elif operator == "-":
+        hasil = angka1 - angka2
+    elif operator == "*":
+        hasil = angka1 * angka2
+    elif operator == "/":
+        if angka2 != 0:
+            hasil = angka1 / angka2
+        else:
+            print("Error: Pembagian dengan nol tidak diperbolehkan!")
+            return
+    else:
+        print("Error: Operator tidak valid!")
+        return
+
+    # Menampilkan hasil
+    print(f"Hasil: {hasil}")
+
+# Memanggil fungsi
+kalkulator()
+`
+Program kalkulator sederhana dalam Python adalah proyek yang baik untuk pemula dan programmer tingkat lanjut. Program ini memungkinkan pengguna untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian.
+
+python
+angka1 = float(input("Masukkan angka pertama: "))
+angka2 = float(input("Masukkan angka kedua: "))
+operator = input("Masukkan operator (+, -, *, /): ").strip()
+`
+Pengguna diminta memasukkan angka pertama dan angka kedua, yang kemudian dikonversi menjadi tipe float agar bisa menerima bilangan desimal, Pengguna diminta memasukkan operator aritmatika, yaitu salah satu dari + (penjumlahan), - (pengurangan), * (perkalian), atau / (pembagian). Fungsi strip() digunakan untuk menghapus spasi yang mungkin tidak sengaja dimasukkan.
+
+python
+if operator == "+":
+    hasil = angka1 + angka2
+elif operator == "-":
+    hasil = angka1 - angka2
+elif operator == "*":
+    hasil = angka1 * angka2
+elif operator == "/":
+    if angka2 != 0:
+        hasil = angka1 / angka2
+    else:
+        print("Error: Pembagian dengan nol tidak diperbolehkan!")
+        return
+`
+Jika operator adalah +, maka fungsi akan menjumlahkan kedua angka (angka1 + angka2), Jika operator adalah -, maka fungsi akan mengurangi angka pertama dengan angka kedua (angka1 - angka2), 
+Jika operator adalah *, maka fungsi akan mengalikan angka pertama dengan angka kedua (angka1 * angka2), Jika operator adalah /, maka fungsi akan membagi angka pertama dengan angka kedua (angka1 / angka2). Namun, sebelum melakukan pembagian, fungsi memastikan bahwa angka kedua (angka2) tidak bernilai nol, karena pembagian dengan nol tidak valid dan akan menyebabkan error.
+
+python
+else:
+    print("Error: Operator tidak valid!")
+    return
+print(f"Hasil: {hasil}")
+kalkulator()
+`
+Jika pengguna memasukkan operator yang tidak dikenali (bukan +, -, *, atau /), Setelah operasi berhasil dijalankan, hasil perhitungan akan ditampilkan kepada pengguna
+
+Hasil program tersebut:
+
+![Screenshot (50)](https://github.com/user-attachments/assets/901416c4-7154-4f5d-b69f-3e9c0eccf2d3)
+
+Code program tersebut:
+
+![Screenshot (49)](https://github.com/user-attachments/assets/ceb215b0-d8c5-4af5-b416-09196cc6bf3f)
+
+Dan ini flowchart nya
+
+![Screenshot 2024-10-26 051738](https://github.com/user-attachments/assets/5d36b67c-db9b-4939-98f9-1bed18b1f486)
