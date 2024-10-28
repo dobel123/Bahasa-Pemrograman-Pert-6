@@ -56,7 +56,8 @@ Output:
 
 ## BERIKUT SCREENSHOT VISUALCODE
 
-<img width="960" alt="Screenshot 2024-10-25 142332" src="https://github.com/user-attachments/assets/8f6abfb8-ee26-4af4-a322-a7f60e2f69ef">
+![Cuplikan layar 2024-10-28 104003](https://github.com/user-attachments/assets/c8c24131-ee45-4544-acd6-569e681468e7)
+
 
 ## LATIHAN 2
 ### MEMBUAT PROGRAM MENAMPILKAN GAJI KARYAWAN
