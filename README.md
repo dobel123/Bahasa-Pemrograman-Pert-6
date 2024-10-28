@@ -287,11 +287,13 @@ Setelah menghitung total harga, anda dapat langsung menjalankan fungsinya
 
 Hasil program tersebut:
 
-![Screenshot (47)](https://github.com/user-attachments/assets/1ff29a57-b4ea-4b6b-9d47-2ca1beb169d4)
+![Cuplikan layar 2024-10-28 150501](https://github.com/user-attachments/assets/1fc6f1ef-35b6-4627-9d48-13df48ee3bec)
+
 
 Code program tersebut:
 
-![Screenshot (48)](https://github.com/user-attachments/assets/ba884b84-ccaf-4cd2-8324-79b8439ca699)
+![Cuplikan layar 2024-10-28 150958](https://github.com/user-attachments/assets/f3f3af0c-7722-49a3-b9af-509ff7454c2f)
+
 
 Dan ini flowchart nya
 
