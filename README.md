@@ -369,7 +369,8 @@ Jika pengguna memasukkan operator yang tidak dikenali (bukan +, -, *, atau /), S
 
 Hasil program tersebut:
 
-![Screenshot (50)](https://github.com/user-attachments/assets/901416c4-7154-4f5d-b69f-3e9c0eccf2d3)
+![Cuplikan layar 2024-10-28 153608](https://github.com/user-attachments/assets/e9a5f887-a4ec-4e9f-bdb4-62076a8ca493)
+
 
 Code program tersebut:
 
